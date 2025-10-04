@@ -66,9 +66,9 @@ make clean   # limpar tudo
 1. **Health check sem `curl`** → adicionei instalação manual.  
 2. **Proxy iniciando antes das apps** → usei `depends_on` com healthcheck dentro do docker compose para app1 e app2.  
 3. **IPs variando entre containers** → a primeira tentativa usava IPs fixos e foi resolvido com service discovery do Docker.  
-4. **Problemas de headers** → foram depois configurados corretamente no Nginx.  
+4. **Problemas de headers** → foram depois configurados corretamente no Nginx. 
 5. **Debugging** → padronizei logs, comandos no Makefile e uso de `docker-compose exec`.  
-
+6. **Botão de status com erro de 404 not found** → mudei o link relativo do botão de `/status` para `app/status`
 ## 📚 O que Aprendi  
 
 - **Diferença entre Dockerfile, Imagem, Container e Docker Compose**  

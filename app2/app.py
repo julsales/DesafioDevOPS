@@ -52,8 +52,8 @@ def index():
             <p>🌐 Rota: <code>/app2</code></p>
             
             <div>
-                <a href="/status" class="button">📈 Status</a>
-                <a href="/health" class="button">💚 Health Check</a>
+                <a href="/app2/status" class="button">📈 Status</a>
+                <a href="/app2/health" class="button">💚 Health Check</a>
                 <a href="/" class="button">🏠 Voltar ao Início</a>
             </div>
         </div>
@@ -79,7 +79,7 @@ def status():
         <li><strong>Timestamp:</strong> {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</li>
         <li><strong>Versão:</strong> 1.0.0</li>
     </ul>
-    <p><a href="/">← Voltar</a></p>
+    <p><a href="/app2/">← Voltar</a></p>
     """
 
 if __name__ == "__main__":

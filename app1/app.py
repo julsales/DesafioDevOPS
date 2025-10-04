@@ -52,8 +52,8 @@ def index():
             <p>🌐 Rota: <code>/app1</code></p>
             
             <div>
-                <a href="/info" class="button">ℹ️ Informações</a>
-                <a href="/health" class="button">💚 Health Check</a>
+                <a href="/app1/info" class="button">ℹ️ Status</a>
+                <a href="/app1/health" class="button">💚 Health Check</a>
                 <a href="/" class="button">🏠 Voltar ao Início</a>
             </div>
         </div>
@@ -77,7 +77,7 @@ def info():
         <li><strong>Python:</strong> {os.sys.version}</li>
         <li><strong>Flask:</strong> Aplicação Web Framework</li>
     </ul>
-    <p><a href="/">← Voltar</a></p>
+    <p><a href="/app1/">← Voltar</a></p>
     """
 
 if __name__ == "__main__":
